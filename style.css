@@ -1,8 +1,232 @@
 html {
     box-sizing: border-box;
 }
-
 body {
     margin: 0;
+    color: white;
+    background-color: rgba(11, 10, 10, 0.72);
     min-height: 100vh;
 }
+
+#header {
+    background-color: rgba(100, 99, 99, 0.72) !important;
+    margin:0;
+    padding: 0.7rem 0.7rem;
+    font-size: 1rem;
+}
+
+#main {
+    margin-top: 5rem;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.8rem!important;
+    text-align: center;  
+}
+
+#keyContainer {
+    font-size: 1rem !important;
+    margin-top: 4rem;
+    margin-left: 17rem;
+    margin-right: 17rem;
+    margin-bottom: 5rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    display: grid;
+    grid-template:
+    [row1-start] "w . . . . . . ." 5em [row1-end]
+    [row2-start] "s d f g h j t l" 1em [row2-end]
+    /auto auto;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+}
+
+#w {
+    grid-area: w;
+}
+
+#s {
+    grid-area: s;
+}
+
+#d {
+    grid-area: d;
+}
+
+#f {
+    grid-area: f;
+}
+
+#g {
+    grid-area: g;
+}
+
+#h {
+    grid-area: h;
+}
+
+#j {
+    grid-area: j;
+}
+
+#t {
+    grid-area: t;
+}
+
+#l {
+    grid-area: l;
+}
+
+#historyOfPressedBtns {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    margin-top: 0.5rem;
+    margin-left: 17rem;
+    margin-right: 17rem;
+    font-size: 0.8rem!important;
+}
+
+#additionalButtons {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.drum {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 6px;
+    background-color: rgba(100, 99, 99, 0.72) !important;
+    font-size: 0.8rem;
+    text-align: center;
+    color: white;
+    border: none;
+}
+
+#showAndHideBtn {
+    border-radius: 6px;
+    background-color: rgba(100, 99, 99, 0.72);
+    color: white;
+    border: none;
+    width: 5rem;
+    height: 5rem;
+    margin: 0.5rem;
+}
+
+#cleanButton {
+    border-radius: 6px;
+    background-color: rgba(100, 99, 99, 0.72);
+    color: white;
+    width: 5rem;
+    height: 5rem;
+    border: none;
+}
+
+.pressed {
+    transform: scale(0.9);
+    background-color: rgba(11, 10, 10, 0.72) !important;
+}
+
+button:focus { 
+    outline: none !important; box-shadow: none !important; 
+}
+
+@media screen and (max-width: 900px) and (min-width:300px) {
+
+html {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    color: white;
+    background-color: rgba(11, 10, 10, 0.72);
+    min-height: 100vh;
+}
+
+#header {
+    background-color: rgba(100, 99, 99, 0.72) !important;
+    margin:0;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.9rem;
+}
+#main {
+    margin-top: 0.3rem;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.1rem!important;
+    text-align: center;  
+}
+#keyContainer {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px 10px;
+    padding: 0;
+}
+
+.drum {
+    width: 10rem;
+    height: 8em;
+    border-radius: 6px;
+    background-color: rgba(100, 99, 99, 0.72) !important;
+    font-size: 0.8rem;
+    text-align: center;
+    color: white;
+    border: none;
+    padding: 0;
+}
+
+#l {
+    flex-basis:85%
+}
+
+#historyOfPressedBtns {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    margin-top: 0.5em;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#additionalButtons {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#showAndHideBtn {
+    border-radius: 6px;
+    background-color: rgba(100, 99, 99, 0.72);
+    color: white;
+    border: none;
+    width: 9rem;
+    height: 3rem;
+}
+
+#cleanButton {
+    border-radius: 3px;
+    background-color: rgba(100, 99, 99, 0.72);
+    color: white;
+    width: 9rem;
+    height: 3rem;
+    border: none;
+}
+
+.pressed {
+    transform: scale(0.9);
+    background-color:rgba(11, 10, 10, 0.72) !important;
+}
+
+button:focus { 
+    outline: none !important; box-shadow: none !important; 
+}
+
+};
+
