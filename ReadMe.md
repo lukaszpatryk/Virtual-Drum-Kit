@@ -47,4 +47,4 @@ The application is responsive to 375px.
 
 ## Setup
 
-https://github.com/lukaszpatryk/Virtual-Drum-Kit
+https://github.com/lukaszpatryk/Virtual-Drum-Kit# Virtual-Drum
